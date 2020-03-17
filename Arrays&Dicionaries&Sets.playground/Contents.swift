@@ -55,10 +55,53 @@ dicionario["chave3"] = "novo valor 3"
 //remover
 dicionario.removeValue(forKey: "chave 1")
 print(dicionario)
-dicionario.remove(at: dicionario.index(forKey: "chave 2"))!
-print(dicionario)
+
 
 
 
 
 //Sets
+//nao contem indices, nao é ordenado por padrao
+var set = Set([1, 2, 3 , 4, 5])
+set.sorted()
+//vantagens: nao pode ter elementos duplicados
+
+var setDuplicatedElements = Set([1,2,3,4,5,6,6,6,6])
+setDuplicatedElements.sorted()
+
+//elementos tem que seguir o protocolo hashable
+//pra saber se ja existe elemento igual, ele usa isso
+1.hashValue
+2.hashValue
+
+set.insert(7)
+print(set)
+//se tentar adicionar de novo o 7, nao sera adicionado
+
+set.removeFirst() //nao garante que vc vai remover o que quer, por nao ser ordenado
+print(set)
+
+set.popFirst()
+print(set)
+
+set.remove(3)//pelo valor
+print(set)
+
+
+set.remove(at: set.firstIndex(of: 5)!)//primeiro indice do valor 5
+print(set)
+
+let animals = Set(["dog", "cat", "horse", "chicken"])
+let farmAnimals = Set(["horse", "chicken"])
+
+farmAnimals.isSubset(of: animals) //todos elementos estao contidos
+animals.isSuperset(of: farmAnimals)
+
+let savanaAnimals = Set(["elephant", "tiger"])
+farmAnimals.isDisjoint(with: savanaAnimals) //nao ha nenhum animal que exista no savanaAnimals
+
+let newAnimalsSet = animals.union(savanaAnimals)
+print(newAnimalsSet)
+
+animals.intersection(farmAnimals)//interseccao dos Sets
+
