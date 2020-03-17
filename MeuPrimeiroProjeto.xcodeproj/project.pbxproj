@@ -14,6 +14,7 @@
 		06E04D0824216D2800150C39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06E04D0624216D2800150C39 /* LaunchScreen.storyboard */; };
 		06E04D1324216D2900150C39 /* MeuPrimeiroProjetoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E04D1224216D2900150C39 /* MeuPrimeiroProjetoTests.swift */; };
 		06E04D1E24216D2900150C39 /* MeuPrimeiroProjetoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E04D1D24216D2900150C39 /* MeuPrimeiroProjetoUITests.swift */; };
+		06E04D2C2421735500150C39 /* PrimeiroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E04D2B2421735500150C39 /* PrimeiroViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		06E04D1924216D2900150C39 /* MeuPrimeiroProjetoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeuPrimeiroProjetoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		06E04D1D24216D2900150C39 /* MeuPrimeiroProjetoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeuPrimeiroProjetoUITests.swift; sourceTree = "<group>"; };
 		06E04D1F24216D2900150C39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06E04D2B2421735500150C39 /* PrimeiroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeiroViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				06E04D0424216D2800150C39 /* Assets.xcassets */,
 				06E04D0624216D2800150C39 /* LaunchScreen.storyboard */,
 				06E04D0924216D2800150C39 /* Info.plist */,
+				06E04D2B2421735500150C39 /* PrimeiroViewController.swift */,
 			);
 			path = MeuPrimeiroProjeto;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06E04D2C2421735500150C39 /* PrimeiroViewController.swift in Sources */,
 				06E04CFC24216D2700150C39 /* AppDelegate.swift in Sources */,
 				06E04CFE24216D2700150C39 /* SceneDelegate.swift in Sources */,
 			);
